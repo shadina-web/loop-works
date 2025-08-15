@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merge Arrays Using Spread Operator</title>
+</head>
+<body>
+
+  <h2>Merge Two Arrays</h2>
+
+  <button onclick="mergeArrays()">Merge Arrays</button>
+
+  <p>Merged Result: <span id="result"></span></p>
+
+  <script>
+    function mergeArrays() {
+      const a = [1, 2];
+      const b = [3, 4];
+      const merged = [...a, ...b];
+
+      document.getElementById("result").textContent = JSON.stringify(merged);
+    }
+  </script>
+
+</body>
+</html>
